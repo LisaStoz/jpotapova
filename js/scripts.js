@@ -405,8 +405,8 @@ mr = (function (mr, $, window, document){
             accordion.css('min-height',minHeight);
         });
 
-        if(window.location.hash !== '' && window.location.hash !== '#'){
-            if($('.accordion li'+$(this).attr('href')).length){
+        if(window.location.hash !== '' && window.location.hash !== '#' && window.location.hash.match(/#\/.*/) === null){
+            if($('.accordion > li > .accordion__title'+window.location.hash).length){
                  mr.accordions.activatePanelById(window.location.hash, true);
             }
         }
@@ -466,7 +466,7 @@ mr = (function (mr, $, window, document){
     mr.accordions.activatePanelById = function(id, forceOpen){
         var panel;
        
-        if(id !== '' && id !== '#'){
+        if(id !== '' && id !== '#' && id.match(/#\/.*/) === null){
             panel = $('.accordion > li > .accordion__title#'+id.replace('#', ''));
             if(panel.length){
                 $('html, body').stop(true).animate({
@@ -667,7 +667,7 @@ mr = (function (mr, $, window, document){
         }
 
         if(!mr.dropdowns.done){
-            jQuery(document).on('click','body:not(.dropdowns--hover) .dropdown:not(.dropdown--hover), body.dropdowns--hover .dropdown.dropdown--click',function(event){
+            jQuery(document).on('click','body:not(.dropdowns--hover) .dropdown, body.dropdowns--hover .dropdown.dropdown--click',function(event){
                 var dropdown = jQuery(this);
                 if(jQuery(event.target).is('.dropdown--active > .dropdown__trigger')){
                     dropdown.siblings().removeClass('dropdown--active').find('.dropdown').removeClass('dropdown--active');
@@ -721,7 +721,7 @@ mr = (function (mr, $, window, document){
                 
                 container.css('left',((-containerOffset)+(masterOffset)));
 
-                if(container.find('.dropdown__content:not([class*="md-12"])').length){
+                if(container.find('.dropdown__content:not([class*="lg-12"])').length){
                     content = container.find('.dropdown__content');
                     content.css('left', ((menuItem)-(masterOffset)));
                 }
@@ -761,7 +761,7 @@ mr = (function (mr, $, window, document){
                 
                 container.css('right',((-containerOffset)+(masterOffset)));
 
-                if(container.find('.dropdown__content:not([class*="md-12"])').length){
+                if(container.find('.dropdown__content:not([class*="lg-12"])').length){
                     content = container.find('.dropdown__content');
                     content.css('right', ((menuItem)-(masterOffset)));
                 }
@@ -884,7 +884,7 @@ mr = (function (mr, $, window, document){
                 // Create a captcha div and insert it before the submit button.
                 $insertBefore = $thisForm.find('button[type=submit]').closest('[class*="col-"]');
                 $captchaDiv   = jQuery('<div>').addClass('recaptcha');
-                $column       = jQuery('<div>').addClass('col-xs-12').append($captchaDiv);
+                $column       = jQuery('<div>').addClass('col-12').append($captchaDiv);
                 $column.insertBefore($insertBefore);
             }
 
@@ -1450,7 +1450,7 @@ mr = (function (mr, $, window, document){
                         optimised: false
                     };
 
-                    markerAo.icon = typeof mapInstance.attr('data-marker-image') !== typeof undefined ? mapInstance.attr('data-marker-image'): undefined;
+                    markerAo.icon = typeof mapInstance.attr('data-marker-image') !== typeof undefined ? {url: mapInstance.attr('data-marker-image'), scaledSize: new google.maps.Size(50,50)} : undefined;
                     markerAo.title = mapInstance.attr('data-marker-title');
 
                     mapOptions = jQuery.extend({}, mapDefaults, mr.maps.options.map, mapAo);
@@ -2693,7 +2693,7 @@ mr = (function (mr, $, window, document){
 
 
     mr.tabs.activateTabById = function(id){
-        if(id !== '' && id !== '#'){
+        if(id !== '' && id !== '#' && id.match(/#\/.*/) === null){
             if($('.tabs > li#'+id.replace('#', '')).length){
                 $('.tabs > li#'+id.replace('#', '')).click();
             }
