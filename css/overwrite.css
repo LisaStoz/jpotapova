@@ -16,3 +16,12 @@
   top: 0;
   left: 0;
 }
+
+.skill.btn:not(:disabled):not(.disabled) {
+  margin-bottom: 2em;
+  cursor: default;
+}
+
+.skill.btn + .btn {
+  margin-left: 1.85714286em;
+}
