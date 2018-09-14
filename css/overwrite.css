@@ -25,3 +25,7 @@
 .skill.btn + .btn {
   margin-left: 1.85714286em;
 }
+
+[data-scrim-top="5"]:before {
+  opacity: 0.9;
+}
