@@ -34,6 +34,11 @@
 .notification.notification-email {
   min-width: 100px;
   z-index: 100;
+  width: auto;
+}
+
+.notification > .boxed {
+  padding-right: 40px;
 }
 
 .fine-print-wrapper {
