@@ -1,1 +1,37 @@
-/*! Place your custom styles here */
+.what-else--item {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.what-else--h4 {
+  margin-bottom: 0.2em;
+}
+
+.what-else--content {
+  margin-left: 1.5em;
+}
+
+.what-else--tick {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.skill.btn:not(:disabled):not(.disabled) {
+  margin-bottom: 2em;
+  cursor: default;
+}
+
+.skill.btn + .btn {
+  margin-left: 1.85714286em;
+}
+
+[data-scrim-top="5"]:before {
+  opacity: 0.9;
+}
+
+
+.notification.notification-email {
+  min-width: 100px;
+  z-index: 100;
+}
