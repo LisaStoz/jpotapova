@@ -27,8 +27,8 @@
 }
 
 [data-scrim-top="5"]:before {
-  opacity: 0.99;
-  background: linear-gradient(to bottom, #252525 0%, rgba(0, 0, 0, 0.5) 100%);
+  opacity: 0.9;
+  /* background: linear-gradient(to bottom, #252525 0%, rgba(0, 0, 0, 0.5) 100%); */
 }
 
 
