@@ -28,7 +28,7 @@
 
 [data-scrim-top="5"]:before {
   opacity: 0.2;
-  background: linear-gradient(to top, #252525 0%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(to top, #252525 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 
 
@@ -119,4 +119,8 @@
 
 .project-links {
   margin-top: 15px;
+}
+
+.project-links a {
+  display: block;
 }
