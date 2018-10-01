@@ -84,9 +84,23 @@
   left: 0;
   right: 0;
   bottom: 0;
+  height: 75px;
+  display: block;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  /* background: yellow; */
+}
+
+.project-thumb.hover-element:hover .hover-element__reveal .project-thumb__title{
+  height: 100%;
 }
 
 
-.project-thumb.hover-element .hover-element__reveal .project-thumb__title span {
+/* .project-thumb.hover-element .hover-element__reveal .project-thumb__title span {
   display: none;
+} */
+
+.project-thumb.hover-element .hover-element__reveal .project-thumb__title h4 {
+  /* background: red; */
+  padding-bottom: 20px;
 }
