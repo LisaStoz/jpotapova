@@ -4,7 +4,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     cssmin: {
-      target: {
+      screencss: {
         files: {
           'css/style.min.css': [
             'css/source/bootstrap.css',
@@ -14,6 +14,13 @@ module.exports = function(grunt) {
             'css/source/theme.css',
             'css/source/custom.css',
             'css/source/font-sourcesanspro.css'
+          ]
+        }
+      },
+      printcss: {
+        files: {
+          'css/print.min.css': [
+            'css/source/print.css'
           ]
         }
       }
