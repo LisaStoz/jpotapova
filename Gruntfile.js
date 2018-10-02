@@ -10,6 +10,7 @@ module.exports = function(grunt) {
             'css/source/bootstrap.css',
             'css/source/bootstrap-glyphicons.css',
             'css/source/stack-interface.css',
+            'css/source/socicon.css',
             'css/source/theme.css',
             'css/source/custom.css',
             'css/source/font-sourcesanspro.css'
