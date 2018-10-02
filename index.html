@@ -2,43 +2,28 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Jelizaveta Potapova - Front-end web developer</title>
+        <title>Jelizaveta Potapova - Web developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Site Description Here">
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/font-sourcesanspro.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/style.min.css" rel="stylesheet" type="text/css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400i,600,700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126787481-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-126787481-1');
+        </script>
+
     </head>
     <body class=" ">
         <a id="start"></a>
-        <div class="nav-container ">
-            <!-- <nav class="bar bar-4 bar--transparent bar--absolute" data-fixed-at="200">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4">
-                            <div class="bar__module">
 
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </nav> -->
-            <!--end bar-->
-        </div>
         <div class="main-container">
             <section class="page-navigator">
                 <ul>
@@ -46,7 +31,16 @@
                         <a href="#home" class="inner-link" data-title="Intro"></a>
                     </li>
                     <li>
-                        <a href="#story" class="inner-link" data-title="Story"></a>
+                        <a href="#about" class="inner-link" data-title="About"></a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="inner-link" data-title="Skills"></a>
+                    </li>
+                    <li>
+                        <a href="#my-work" class="inner-link" data-title="My work"></a>
+                    </li>
+                    <li>
+                        <a href="#what-else" class="inner-link" data-title="What else?"></a>
                     </li>
                 </ul>
             </section>
@@ -61,7 +55,7 @@
                                 Jelizaveta Potapova
                             </h1>
                             <p class="lead">
-                                Front-end web developer
+                                Web developer from Vilnius
                             </p>
                         </div>
                     </div>
@@ -69,68 +63,626 @@
                 </div>
                 <!--end of container-->
             </section>
-						<section id="story" class="text-center">
+						<section id="about" >
+                <div class="container ">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8">
+                            <h2 class="article__title text-center">About</h2>
+                            <article>
+                              <div class="article__body">
+                                <p>
+                                  I am experienced and enthusiatic best practises follower. Working with cutting-edge technology is a great joy for me.
+                                </p>
+                                <p>
+                                  My 10+ years of commercial experience includes:
+                                </p>
+                                <ul class="bullets">
+                                  <li>
+                                    massive multi-brand and multilingual long-term projects, development and maintenance of in-house systems, as well as small projects
+
+                                  </li>
+                                  <li>
+                                    projects that are responsive, accessible, performant and cross-browser compatible
+                                  </li>
+                                  <li>
+                                    Working in a big team, in a tiny team and on my own
+
+                                  </li>
+                                  <li>
+                                    Working in Vilnius, London and remotely
+
+                                  </li>
+                                  <li>
+                                    Being a full-stack developer and front-end specialised
+
+                                  </li>
+                                  <li>
+                                    Working with cutting-edge technology and with legacy code
+
+                                  </li>
+                                </ul>
+                                <p>
+                                  During my career I gained understanding of many aspects of a successful web product. Frequently my involvement was not limited to just writing code, but also leading the team, seeing the bigger picture, keeping in mind the business value.
+
+
+                                </p>
+                              </div>
+
+
+                            </article>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div> <!--end of container-->
+            </section><!-- end of about -->
+            <section id="skills" class="text-center bg--secondary">
+                <div class="container ">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8">
+                            <h2 class="article__title text-center">Skills</h2>
+                            <article>
+                              <div class="article__body">
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">Javascript</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">React.js</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">AngularJS</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">Node.js</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">Backbone.js</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">jQuery</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">Jasmine</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">Handlebars</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">Grunt</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">TDD</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">Progressive Enhancement</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">Accessibility</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">Scrum</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">Git, SVN</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">Functional programming</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">HTML, HTML5</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">CSS, CSS3, LESS, Sass</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">MongoDB, MySQL</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">Python</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">PHP</span>
+                                </span>
+                                <span class="btn btn--lg skill" href="#">
+                                    <span class="btn__text">Hybris</span>
+                                </span>
+                              </div>
+
+
+                            </article>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div> <!--end of container-->
+            </section><!-- end of skills -->
+            <section id="my-work">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-10 col-md-8">
-                            <h2>Information coming soon...</h2>
+                        <div class="col-md-12">
+                          <h2 class="text-center">My work</h2>
+                            <div class="masonry">
+                                <div class="masonry-filter-container text-center row justify-content-center align-items-center">
+                                    <span>Projects:</span>
+                                    <div class="masonry-filter-holder masonry-filters--horizontal">
+                                        <div class="masonry__filters" data-filter-all-text="All"></div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="masonry__container row">
+                                    <div class="masonry__item col-md-6 col-12" data-masonry-filter="Commercial">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <div class="thumb-wrapper">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder">
+                                                        <img alt="The Body Shop screenshot" src="thumbs/tbs.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title project-info">
+                                                        <h4>The Body Shop</h4>
+                                                        <div>Responsive, accessible multilingual ecommerce website built with AngularJS. It has rich javascript functionality - listing page interactions, integration with google maps, forms validation etc.</div>
+                                                        <div class="project-links">
+                                                          <a href="https://www.thebodyshop.com/" target="_blank" class="project-link">www.thebodyshop.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <div class="masonry__item col-md-6 col-12" data-masonry-filter="Commercial">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <div class="thumb-wrapper">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder">
+                                                        <img alt="Goodyear, Dunlop, Fulda, Sava screenshots" src="thumbs/gy.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>Goodyear, Dunlop, Fulda, Sava</h4>
+                                                        <div>A multi-brand and multi-lingual system of websites, powered by Tridion CMS</div>
+                                                        <div class="project-links">
+                                                          <a href="https://www.goodyear.com/" target="_blank"  class="project-link">www.goodyear.com</a>
+                                                          <a href="https://www.dunlop.eu" target="_blank"  class="project-link">www.dunlop.eu</a>
+                                                          <a href="https://www.fulda.com" target="_blank"  class="project-link">www.fulda.com</a>
+                                                          <a href="https://www.sava-tires.com" target="_blank"  class="project-link">www.sava-tires.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <div class="masonry__item col-md-6 col-12" data-masonry-filter="Commercial">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <div class="thumb-wrapper">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder">
+                                                        <img alt="Monsoon screenshot" src="thumbs/monsoon.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>Monsoon, Accessorize</h4>
+                                                        <div>Multi-brand and multilingual ecommerce sites with rich javascript functionality.</div>
+                                                        <div class="project-links">
+                                                          <a href="https://www.monsoonlondon.com" target="_blank"  class="project-link">www.monsoonlondon.com</a>
+                                                          <a href="https://uk.accessorize.com/" target="_blank"  class="project-link">uk.accessorize.com</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <div class="masonry__item col-md-6 col-12" data-masonry-filter="Commercial">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <div class="thumb-wrapper">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder">
+                                                        <img alt="Screenshot is not available" src="thumbs/lorem-ipsum.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>Home Office IPT programme</h4>
+                                                        <div>Developed a frontend framework for UK's Home Office IPT Programme. The tool allows to repidly build numerous screens according to the project's design. Generated screens meet high accessibility standard and the tool was throughly documented.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <div class="masonry__item col-md-6 col-12" data-masonry-filter="Commercial">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <div class="thumb-wrapper">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder">
+                                                        <img alt="Reply Project Explorer screenshot" src="thumbs/pex.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>Reply Project Explorer</h4>
+                                                        <div>An internal visualisation tool for Reply Ltd with rich javascript functionality and animations built with D3.js</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <div class="masonry__item col-md-6 col-12" data-masonry-filter="Side">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <div class="thumb-wrapper">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder background--top">
+                                                        <img alt="Playrooms map screenshot" src="thumbs/playrooms.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>Playrooms map</h4>
+                                                        <div>Side project built with React and Google Maps integration. The website is aimed at young moms with small kids and allows to quickly filter and conveniently view playrooms. The website is responsive and very lightweight.</div>
+                                                        <div class="project-links">
+                                                          <a href="https://jpotapova.github.io/playrooms/" target="_blank" class="project-link">jpotapova.github.io/playrooms</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <div class="masonry__item col-md-6 col-12" data-masonry-filter="Side">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <div class="thumb-wrapper">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder background--top">
+                                                        <img alt="Drabužių Taisykla screenshot" src="thumbs/drabuziu-taisykla.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>Drabužių Taisykla</h4>
+                                                        <div>Developed a static website for a self-employed tailor. Website has achieved stunning organic search results among tailor companies and specialists in Lithuania.</div>
+                                                        <div class="project-links">
+                                                          <a href="http://www.drabuziutaisykla.lt/" target="_blank" class="project-link">www.drabuziutaisykla.lt</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <div class="masonry__item col-md-6 col-12" data-masonry-filter="Commercial">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <div class="thumb-wrapper">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder background--top">
+                                                        <img alt="Artlogic online screenshot" src="thumbs/artlogic-online.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>Artlogic Online</h4>
+                                                        <div>Online database for art galleries with very rich functionality, including advanced searching mechanism, generating reports, documents, etc.</div>
+                                                        <div class="project-links">
+                                                          <a href="https://artlogic.net/artlogic/" target="_blank" class="project-link">www.artlogic.net/artlogic</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <div class="masonry__item col-md-6 col-12" data-masonry-filter="Commercial">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <div class="thumb-wrapper">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder background--top">
+                                                        <img alt="Screenshot is not available" src="thumbs/lorem-ipsum.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>Artlogic CMS</h4>
+                                                        <div>I massively contributed to this versatile CMS, which has tons of advanced functionality and allows integration with Arlogic Online inventory system.</div>
+                                                        <div class="project-links">
+                                                          <a href="https://artlogic.net/" target="_blank" class="project-link">www.artlogic.net</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <div class="masonry__item col-md-6 col-12" data-masonry-filter="Commercial">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <div class="thumb-wrapper">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder background--top">
+                                                        <img alt="Booktrust screenshot" src="thumbs/booktrust.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>Booktrust sites</h4>
+                                                        <div>A number of visually and structure-wise similar sites, developed using framework approach - Booktrust, Bookbuzz, Booktime, Children's Laureate, Letterbox Club, Pori Drwy Stori. Advanced recurring events search, sliders, dynamically generated e-cards, password protected areas, dynamic PDF generators</div>
+                                                        <div class="project-links">
+                                                          <a href="https://www.booktrust.org.uk/" target="_blank"  class="project-link">www.booktrust.org.uk</a>
+                                                          <a href="https://www.poridrwystori.org.uk/" target="_blank"  class="project-link">www.poridrwystori.org.uk</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <div class="masonry__item col-md-6 col-12" data-masonry-filter="Commercial">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <div class="thumb-wrapper">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder background--top">
+                                                        <img alt="Ibraaz screenshot" src="thumbs/ibraaz.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>Ibraaz</h4>
+                                                        <div>News portal with advanced search, manually developed slideshow, automatic article relation based on tags, twitter feed.</div>
+                                                        <div class="project-links">
+                                                          <a href="https://www.ibraaz.org/" target="_blank"  class="project-link">www.ibraaz.org</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <div class="masonry__item col-md-6 col-12" data-masonry-filter="Side">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <div class="thumb-wrapper">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder background--top">
+                                                        <img alt="CodeCanyon plugin screenshot" src="thumbs/codecanyon.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>CodeCanyon plugins</h4>
+                                                        <div>Two jQuery plugins for Twitter Bootstrap 2 and 3 accordingly and Responsive CSS tables framework compatible with IE8. All the items are available on CodeCanyon and have a decent amount of sales and very positive feedback.</div>
+                                                        <div class="project-links">
+                                                          <a href="https://codecanyon.net/user/lisastoz/portfolio" target="_blank" class="project-link">codecanyon.net/user/lisastoz/portfolio</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <div class="masonry__item col-md-6 col-12" data-masonry-filter="Side">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <div class="thumb-wrapper">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder background--top">
+                                                        <img alt="Date ant Time Picker plugin screenshot" src="thumbs/datetimepicker.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>Date &amp; Time Picker plugin</h4>
+                                                        <div>Free jQuery plugin, implements date and time functionality with mobile-style user interface.</div>
+                                                        <div class="project-links">
+                                                          <a href="http://jpotapova.github.io/DateTimePicker/" target="_blank" class="project-link">jpotapova.github.io/DateTimePicker</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <div class="masonry__item col-md-6 col-12" data-masonry-filter="Commercial">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <div class="thumb-wrapper">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder background--top">
+                                                        <img alt="Sleep Better Method screenshot" src="thumbs/sleepbettermethod.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>Sleep Better Method</h4>
+                                                        <div>Simple responsive website</div>
+                                                        <div class="project-links">
+                                                          <a href="https://www.sleepbettermethod.com/" target="_blank" class="project-link">www.sleepbettermethod.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <div class="masonry__item col-md-6 col-12" data-masonry-filter="Commercial">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <div class="thumb-wrapper">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder background--top">
+                                                        <img alt="Copper House Gallery screenshot" src="thumbs/copperhouse.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>The Copper House Gallery</h4>
+                                                        <div>Shopping cart and integration with WorldPay</div>
+                                                        <div class="project-links">
+                                                          <a href="https://www.thecopperhousegallery.com/" target="_blank" class="project-link">www.thecopperhousegallery.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <div class="masonry__item col-md-6 col-12" data-masonry-filter="Commercial">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <div class="thumb-wrapper">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder background--top">
+                                                        <img alt="Jenna Burlingham Fine Art screenshot" src="thumbs/jennaburlingham.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>Jenna Burlingham Fine Art</h4>
+                                                        <div>Artworks categorisation and integration with Artlogic Online</div>
+                                                        <div class="project-links">
+                                                          <a href="https://www.jennaburlingham.com/" target="_blank" class="project-link">www.jennaburlingham.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <div class="masonry__item col-md-6 col-12" data-masonry-filter="Commercial">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <div class="thumb-wrapper">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder background--top">
+                                                        <img alt="The Prince's School of Traditional Arts screenshot" src="thumbs/psta.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>The Prince's School of Traditional Arts</h4>
+                                                        <div>A website with a shopping cart and integration with WorldPay</div>
+                                                        <div class="project-links">
+                                                          <a href="https://www.psta.org.uk/" target="_blank" class="project-link">www.psta.org.uk</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                </div>
+                                <!--end of masonry container-->
+                            </div>
+                            <!--end masonry-->
                         </div>
                     </div>
                     <!--end of row-->
                 </div>
                 <!--end of container-->
-            </section>
-            <footer class="footer-7 text-center-xs  ">
+            </section><!-- end of my work -->
+            <section id="what-else" class="bg--secondary">
+                <div class="container ">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8">
+                            <h2 class="article__title text-center">What else?</h2>
+                            <article>
+                              <div class="article__body">
+                                <p>
+                                  Apart from writing code I love to:
+                                </p>
+                                <div class="what-else--item">
+                                    <div class="what-else--tick">
+                                      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="what-else--content">
+                                      <h4 class="what-else--h4">speak and demonstrate code</h4>
+                                      <p>
+                                        organised technical workshops at Reply UK, given a guest talk at Makers Academy.
+                                      </p>
+                                    </div>
+                                </div><!-- end of what-else--item -->
+                                <div class="what-else--item">
+                                    <div class="what-else--tick">
+                                      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="what-else--content">
+                                      <h4 class="what-else--h4">coach and help others</h4>
+                                      <p>
+                                        coached beginner developers at Codebar, OpenTechSchool.
+                                      </p>
+                                    </div>
+                                </div><!-- end of what-else--item -->
+                                <div class="what-else--item">
+                                    <div class="what-else--tick">
+                                      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="what-else--content">
+                                      <h4 class="what-else--h4">compete</h4>
+                                      <p>
+                                        competed at Open Team Programming Collegiate Cup, HackerRank contests, Mind Sports Olympiad
+                                      </p>
+                                    </div>
+                                </div><!-- end of what-else--item -->
+                              </div>
+                            </article>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div> <!--end of container-->
+            </section><!-- end of what-else -->
+            <footer class="footer-7 text-center-xs">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 fine-print-wrapper">
                             <span class="type--fine-print">&copy;
                                 <span class="update-year"></span> Jelizaveta Potapova</span>
                         </div>
-                        <div class="col-sm-6 text-right text-center-xs">
+                        <div class="col-sm-6 text-center-xs social-list-wrapper">
+                          <div class="text-left notification notification-email pos-right pos-bottom col-md-4 col-lg-3" data-animation="from-bottom" data-notification-link="trigger-email" data-autohide="3000">
+                              <div class="boxed boxed--border border--round box-shadow">
+                                <p>
+                                    potapova.jelizaveta@gmail.com
+                                </p>
+
+                              </div>
+                          </div>
                             <ul class="social-list list-inline">
+                              <li>
+                                  <a href="#" data-notification-link="trigger-email">
+                                      <i class="socicon socicon-mail icon icon--xs"></i>
+                                  </a>
+                              </li>
                                 <li>
-                                    <a href="https://www.linkedin.com/in/jpotapova/en" target="_blank">
+                                    <a href="https://www.linkedin.com/in/jpotapova/" target="_blank">
                                         <i class="socicon socicon-linkedin icon icon--xs"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://github.com/LisaStoz" target="_blank">
+                                    <a href="https://github.com/jpotapova" target="_blank">
                                         <i class="socicon socicon-github icon icon--xs"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://twitter.com/LisaStoz" target="_blank">
-                                        <i class="socicon socicon-twitter icon icon--xs"></i>
+                                    <a href="https://stackoverflow.com/users/2424355/jpotapova" target="_blank">
+                                        <i class="socicon socicon-stackoverflow icon icon--xs"></i>
                                     </a>
                                 </li>
                             </ul>
                         </div>
+
                     </div>
                     <!--end of row-->
+
                 </div>
                 <!--end of container-->
+
             </footer>
+
+
         </div>
-        <!--<div class="loader"></div>-->
         <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
             <i class="stack-interface stack-up-open-big"></i>
         </a>
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/flickity.min.js"></script>
-        <script src="js/easypiechart.min.js"></script>
-        <script src="js/parallax.js"></script>
-        <script src="js/typed.min.js"></script>
-        <script src="js/datepicker.js"></script>
-        <script src="js/isotope.min.js"></script>
-        <script src="js/ytplayer.min.js"></script>
-        <script src="js/lightbox.min.js"></script>
-        <script src="js/granim.min.js"></script>
-        <script src="js/jquery.steps.min.js"></script>
-        <script src="js/countdown.min.js"></script>
-        <script src="js/twitterfetcher.min.js"></script>
-        <script src="js/spectragram.min.js"></script>
-        <script src="js/smooth-scroll.min.js"></script>
-        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+           window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>');
+        </script>
+        <script src="js/libs.min.js"></script>
+        <script src="js/scripts.min.js"></script>
     </body>
 </html>
