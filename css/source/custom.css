@@ -124,3 +124,14 @@
 .project-links a {
   display: block;
 }
+
+@media (max-width: 767px) {
+  .btn--lg.skill {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  .skill.btn + .btn {
+    margin-left: 1em;
+  }
+}
