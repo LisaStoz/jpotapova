@@ -21,9 +21,14 @@ module.exports = function(grunt) {
       options: {
         mangle: false
       },
-      target: {
+      custom: {
         files: {
           'js/scripts.min.js': ['js/source/scripts.js']
+        }
+      },
+      libs: {
+        files: {
+          'js/libs.min.js': ['js/source/isotope.min.js', 'js/source/smooth-scroll.min.js']
         }
       }
     }
