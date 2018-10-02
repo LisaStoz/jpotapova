@@ -16,14 +16,24 @@ module.exports = function(grunt) {
           ]
         }
       }
+    },
+    uglify: {
+      options: {
+        mangle: false
+      },
+      target: {
+        files: {
+          'js/scripts.min.js': ['js/source/scripts.js']
+        }
+      }
     }
   });
 
   // Load the plugin that provides the "uglify" task.
-  //grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Default task(s).
-  grunt.registerTask('default', ['cssmin']);
+  grunt.registerTask('default', ['cssmin', 'uglify']);
 
 };
