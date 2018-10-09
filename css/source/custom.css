@@ -135,3 +135,11 @@
     margin-left: 1em;
   }
 }
+
+.page-404 section {
+  padding-bottom: 3em;
+}
+
+.page-404 article a {
+  color: grey;
+}
