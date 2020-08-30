@@ -2,9 +2,9 @@
 
 ## Branches
 
-* *dev* - development environment
-* *preprod* - staging environment where production files are generates
-* *master* - live environment
+- _dev_ - development environment
+- _preprod_ - staging environment where production files are generated
+- _master_ - live environment
 
 ## Instructions
 
